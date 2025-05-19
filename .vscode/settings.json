@@ -6,33 +6,6 @@
                 "enableSsl": "Disabled"
             },
             "previewLimit": 50,
-            "server": "srv493.hstgr.io",
-            "port": 3306,
-            "driver": "MySQL",
-            "name": "u148878710_users",
-            "database": "u148878710_users",
-            "username": "u148878710_west_cottage"
-        },
-        {
-            "mysqlOptions": {
-                "authProtocol": "default",
-                "enableSsl": "Disabled"
-            },
-            "previewLimit": 50,
-            "server": "31.220.106.151",
-            "port": 3306,
-            "driver": "MySQL",
-            "name": "clients",
-            "database": "u148878710_clients",
-            "username": "u148878710_admin_cottages",
-            "password": "@Westcottage2024"
-        },
-        {
-            "mysqlOptions": {
-                "authProtocol": "default",
-                "enableSsl": "Disabled"
-            },
-            "previewLimit": 50,
             "server": "sql.freedb.tech",
             "port": 3306,
             "driver": "MySQL",
@@ -41,6 +14,21 @@
             "database": "freedb_blood_pressure_tracker",
             "username": "freedb_footroot",
             "password": "3%sRFtgFhunhQB$"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "srv1755.hstgr.io",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "hostinger blood pressure",
+            "group": "hostinger",
+            "database": "u148878710_kine_members",
+            "username": "u148878710_footroot",
+            "password": "@Xativa2025"
         }
     ]
 }

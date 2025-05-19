@@ -1,12 +1,9 @@
 <?php
-//$servername = "localhost"; // Replace with your server name
-//$username = "dani"; // Replace with your MySQL username
-//$password = "123456"; // Replace with your MySQL password
-//$dbname = "blood_pressure_tracker"; // Replace with your database name
-$servername = "sql.freedb.tech"; // Replace with your server name
-$username = "freedb_footroot"; // Replace with your MySQL username
-$password = "3%sRFtgFhunhQB$";
-$dbname = "freedb_blood_pressure_tracker"; // Replace with your database name
+$servername = "srv1755.hstgr.io"; // Replace with your server name
+$username = "u148878710_footroot"; // Replace with your MySQL username
+$password = "@Xativa2025"; // Replace with your MySQL password
+$dbname = "u148878710_kine_members"; // Replace with your database name
+
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
