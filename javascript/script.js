@@ -1,3 +1,5 @@
+const { use } = require("react");
+
 const systolicInput = document.getElementById('systolic');
 const diastolicInput = document.getElementById('diastolic');
 const pulseInput = document.getElementById('pulse');
@@ -14,12 +16,16 @@ const bpChart = new Chart(bpChartCanvas, {
                 data: [],
                 borderColor: 'red',
                 fill: false,
-                tension: 0.3 // Optional: for smoother lines
+                tension: 0.3, // Optional: for smoother lines
+                pointRadius: 5, // Optional: larger points
+                pointBackgroundColor: '#ECFAE5', // Optional: point color
+                pointBorderColor: '#fff', // Optional: point border color
+                pointHoverRadius: 7 // Optional: larger hover radius
             },
             {
                 label: 'Diastolic (mmHg)',
                 data: [],
-                borderColor: 'blue',
+                borderColor: '#ECFAE5',
                 fill: false,
                 tension: 0.3 // Optional: for smoother lines
             },
@@ -33,12 +39,72 @@ const bpChart = new Chart(bpChartCanvas, {
         ]
     },
     options: {
-        background: 'rgba(230, 14, 14, 0.8)',
         scales: {
             y: {
-                beginAtZero: false // Don't force the Y-axis to start at 0
+                beginAtZero: false, // Don't force the Y-axis to start at 0
+                title: {
+                    display: true,
+                    text: 'Blood Pressure (mmHg) / Pulse (bpm)',
+                    font: {
+                        size: 12
+                    }
+                },
+                ticks: {
+                    color: '#666'
+                },
+                grid: {
+                    color: 'rgba(0,0,0,0.1'
+                }
+            },
+            x: {
+                ticks: {
+                    color: '#666'
+                },
+                grid: {
+                    color: 'rgba(0,0,0,0.1'
+                }
             }
+        },
+        title: {
+            display: true,
+            text: 'Blood Pressure Trends Over Time',
+            position: 'top',
+            font: {
+                size: 16,
+                weight: 'bold',
+                color: '#333'
+            },
+            padding: {
+                top: 10,
+                bottom: 10
+            },
+            legend: {
+                display: true,
+                position: 'bottom',
+                align: 'center',
+                labels: {
+                    font: {
+                        size: 14,
+                        color: '#666'
+                    },
+                    usePointStyle: true,
+                }
+            },
+            tooltips: {
+                enabled: true,
+                mode: 'nearest',
+                intersect: false,
+                backgroundColor: 'rgba(0, 0, 0, 0.7)',
+                titleFont: {
+                    size: 14
+                },
+                bodyFont: {
+                    size: 12
+                }
+            }
+
         }
+
     }
 }); /* ... chart configuration ... */
 

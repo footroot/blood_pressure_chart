@@ -29,6 +29,21 @@
             "database": "u148878710_kine_members",
             "username": "u148878710_footroot",
             "password": "@Xativa2025"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "localhost",
+            "group": "localhost",
+            "database": "blood_pressure_tracker",
+            "username": "dani",
+            "password": "123456"
         }
     ]
 }

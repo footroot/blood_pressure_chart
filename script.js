@@ -12,7 +12,7 @@ const bpChart = new Chart(bpChartCanvas, {
             {
                 label: 'Systolic (mmHg)',
                 data: [],
-                borderColor: 'red',
+                borderColor: '#ECFAE5',
                 fill: false,
                 tension: 0.3 // Optional: for smoother lines
             },
